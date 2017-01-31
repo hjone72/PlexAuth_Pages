@@ -7,6 +7,8 @@ You will also need to create yourself a DB of some kind and create some SQL func
 At a later date I will probably come clean this all up. As ugly as it is, here you go.
 
 My DB structure is as follows:
+
+```
 +-----------+-----------------+------+-----+---------+----------------+
 |            TABLE: Invites                                           |
 +-----------+-----------------+------+-----+---------+----------------+
@@ -30,7 +32,7 @@ My DB structure is as follows:
 | info       | varchar(10)     | YES  |     | NULL    |                |
 | invites    | int(3)          | YES  |     | NULL    |                |
 +------------+-----------------+------+-----+---------+----------------+
-
+```
 
 Screenshots:
 ![alt tag](https://raw.githubusercontent.com/hjone72/PlexAuth_Pages/master/screenshots/gen_code.JPG)
