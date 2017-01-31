@@ -6,6 +6,32 @@ You will also need to create yourself a DB of some kind and create some SQL func
 
 At a later date I will probably come clean this all up. As ugly as it is, here you go.
 
+My DB structure is as follows:
++-----------+-----------------+------+-----+---------+----------------+
+|            TABLE: Invites                                           |
++-----------+-----------------+------+-----+---------+----------------+
+| Field     | Type            | Null | Key | Default | Extra          |
++-----------+-----------------+------+-----+---------+----------------+
+| id        | int(6) unsigned | NO   | PRI | NULL    | auto_increment |
+| code      | varchar(6)      | NO   |     | NULL    |                |
+| genDate   | varchar(10)     | NO   |     | NULL    |                |
+| genUser   | varchar(50)     | NO   |     | NULL    |                |
+| claimedBy | varchar(50)     | YES  |     | NULL    |                |
++-----------+-----------------+------+-----+---------+----------------+
+
++------------+-----------------+------+-----+---------+----------------+
+|            TABLE: Users                                              |
++------------+-----------------+------+-----+---------+----------------+
+| Field      | Type            | Null | Key | Default | Extra          |
++------------+-----------------+------+-----+---------+----------------+
+| id         | int(6) unsigned | NO   | PRI | NULL    | auto_increment |
+| username   | varchar(50)     | NO   |     | NULL    |                |
+| end_date   | varchar(30)     | NO   |     | NULL    |                |
+| info       | varchar(10)     | YES  |     | NULL    |                |
+| invites    | int(3)          | YES  |     | NULL    |                |
++------------+-----------------+------+-----+---------+----------------+
+
+
 Screenshots:
 ![alt tag](https://raw.githubusercontent.com/hjone72/PlexAuth_Pages/master/screenshots/gen_code.JPG)
 ![alt tag](https://raw.githubusercontent.com/hjone72/PlexAuth_Pages/master/screenshots/code.JPG)
