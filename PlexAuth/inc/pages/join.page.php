@@ -217,6 +217,7 @@
                                         $validation = true; // Validation switch. Start true, triger false on any invalidation.
                                         if (!GoogleValidation($_POST) || !InviteValidation($_POST['icode'])) {
                                             $validation = false;
+					    reloadPage(true);
                                         }
                                     }
                                     if ($validation == true) {
